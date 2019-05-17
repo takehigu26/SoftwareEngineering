@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameoverController">
+  <children>
+    <Pane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="resultLabel" alignment="CENTER" layoutY="89.0" prefHeight="130.0" prefWidth="400.0" text="You Win!">
+         <font>
+            <Font name="Arial Bold" size="64.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#1100ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="closeBtn" layoutX="171.0" layoutY="459.0" mnemonicParsing="false" onAction="#closeBtnClicked" style="-fx-background-color: black;" text="CLOSE" textFill="WHITE" />
+   </children>
+</Pane>
+  </children>
+</VBox>

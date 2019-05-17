@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+  <children>
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="155.0" layoutY="27.0" text="Player Name" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_name" layoutX="117.0" layoutY="52.0" />
+      <TextField fx:id="textfield_ip" layoutX="117.0" layoutY="152.0" />
+      <Label layoutX="161.0" layoutY="127.0" text="IP Address" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_connect" layoutX="158.0" layoutY="242.0" mnemonicParsing="false" onAction="#ConnectServer" style="-fx-background-color: yellow; -fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;" text="CONNECT" />
+      <Button fx:id="button_start" layoutX="133.0" layoutY="367.0" mnemonicParsing="false" onAction="#Startgame" prefHeight="41.0" prefWidth="134.0" style="-fx-background-color: cyan; -fx-background-radius: 20; -fx-border-color: black; -fx-border-radius: 20;" text="GAME START" />
+   </children>
+</Pane>
+  </children>
+</VBox>
